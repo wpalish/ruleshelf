@@ -72,7 +72,7 @@ const definition = {
           p.version === old.version,
           "Номер версии меняется вместе с текстом.",
         );
-      if (p.status === "approved")
+      if (p.status === "approved" && old?.status !== "approved")
         required(
           p.validUntil >= new Date().toISOString().slice(0, 10),
           "Нельзя одобрить просроченный регламент.",
@@ -83,7 +83,7 @@ const definition = {
         old = changed(before, "acks", a.id);
       if (!old)
         required(
-          p.status === "approved" &&
+          !p.archived && p.status === "approved" &&
             a.version === p.version &&
             p.validUntil >= new Date().toISOString().slice(0, 10),
           "Ознакомление возможно с действующей одобренной версией.",

@@ -1,34 +1,52 @@
 TAP version 13
-# Subtest: RuleShelf: complete original workflow, calculation and rejected invalid transition
-ok 1 - RuleShelf: complete original workflow, calculation and rejected invalid transition
+# Subtest: expired approved history permits unrelated work/archive but rejects new late acknowledgments
+ok 1 - expired approved history permits unrelated work/archive but rejects new late acknowledgments
   ---
-  duration_ms: 2.604292
+  duration_ms: 4.020875
+  type: 'test'
+  ...
+# Subtest: date transition, file restart and restore preserve old acknowledgments through an explicit new version
+ok 2 - date transition, file restart and restore preserve old acknowledgments through an explicit new version
+  ---
+  duration_ms: 6.152375
+  type: 'test'
+  ...
+# Subtest: archived approved policy cannot receive new acknowledgments; existing history restores unchanged
+ok 3 - archived approved policy cannot receive new acknowledgments; existing history restores unchanged
+  ---
+  duration_ms: 0.819292
+  type: 'test'
+  ...
+# Subtest: RuleShelf: complete original workflow, calculation and rejected invalid transition
+ok 4 - RuleShelf: complete original workflow, calculation and rejected invalid transition
+  ---
+  duration_ms: 3.595833
   type: 'test'
   ...
 # Subtest: real file restart, optimistic conflict and validated restore into an empty database
-ok 2 - real file restart, optimistic conflict and validated restore into an empty database
+ok 5 - real file restart, optimistic conflict and validated restore into an empty database
   ---
-  duration_ms: 3.134208
+  duration_ms: 3.975375
   type: 'test'
   ...
 # Subtest: HTTP prevents anonymous reads and cross-origin/CSRF writes while authenticated workflow saves
-ok 3 - HTTP prevents anonymous reads and cross-origin/CSRF writes while authenticated workflow saves
+ok 6 - HTTP prevents anonymous reads and cross-origin/CSRF writes while authenticated workflow saves
   ---
-  duration_ms: 73.767084
+  duration_ms: 78.238708
   type: 'test'
   ...
 # Subtest: two products on one host use isolated session cookies and preserve both logins
-ok 4 - two products on one host use isolated session cookies and preserve both logins
+ok 7 - two products on one host use isolated session cookies and preserve both logins
   ---
-  duration_ms: 88.406916
+  duration_ms: 88.192708
   type: 'test'
   ...
-1..4
-# tests 4
+1..7
+# tests 7
 # suites 0
-# pass 4
+# pass 7
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 212.104666
+# duration_ms 227.735167

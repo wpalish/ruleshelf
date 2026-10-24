@@ -4,7 +4,7 @@
   "runtime": "Node 24.19.0",
   "tests": {
     "slug": "ruleshelf",
-    "tests": 4,
+    "tests": 7,
     "pass": true,
     "runtime": "v24.19.0"
   },
@@ -35,5 +35,10 @@
     "slug": "ruleshelf",
     "query": "Учебное правило",
     "result": "visible_label_and_no_results_recovery_passed"
+  },
+  "followup": {
+    "date": "2026-10-25",
+    "change": "Preserve expired approval history without freezing work/restore; reject new archived acknowledgments",
+    "evidence": "docs/lifecycle-verification.json"
   }
 }

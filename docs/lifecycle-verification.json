@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-25",
+  "product": "ruleshelf",
+  "baseline_commit": "cbab31e",
+  "defects": [
+    "Expired approved policy blocked unrelated writes and validated restore after UTC date transition",
+    "Archived approved policy accepted new acknowledgments"
+  ],
+  "before_fix": {
+    "regressions_failed": 3,
+    "unrelated_error": "Нельзя одобрить просроченный регламент.",
+    "restore_error": "Нельзя одобрить просроченный регламент.",
+    "archived_ack_before": 1,
+    "archived_ack_after": 2
+  },
+  "policy": "UTC review date checked on transition into approved. Expired historical approval permits unrelated work/archive/restore. New acknowledgments require nonarchived approved policy, current version and unexpired review date. Existing acknowledgments stay immutable and retain their original version.",
+  "tests": {
+    "passed": 7,
+    "failed": 0,
+    "runtime": "v24.19.0",
+    "log": "docs/test-output.txt",
+    "regression": "tests/lifecycle.test.js",
+    "coverage": [
+      "controlled UTC date transition, unrelated edit and expired history archive",
+      "file restart and validated empty-database restore retain original data and acknowledgments",
+      "explicit return to draft and new v2 approval preserve historical v1 acknowledgment",
+      "fresh expired approval, late/archived/retired/wrong-version/duplicate acknowledgment rejected",
+      "rejected writes preserve full state, revision and audit",
+      "original HTTP auth/CSRF/cookie and conflict tests remain passing"
+    ]
+  },
+  "browser": {
+    "data": "synthetic only, localhost8829",
+    "seed": "Historical2026-10-23 controlled clock only during seed, reset before normal-clock HTTP server",
+    "expired_ack_rejection": {
+      "all_data_unchanged": true,
+      "existing_acknowledgments": 2,
+      "existing_versions": [
+        1,
+        1
+      ],
+      "revision": 8,
+      "audit_events": 8
+    },
+    "archived_policy": "Absent from new acknowledgment selector; server guard verified separately with authenticated HTTP400, not a UI submission",
+    "archived_ack_api": {
+      "authenticated_http_status": 400,
+      "error": "Ознакомление возможно с действующей одобренной версией.",
+      "all_data_and_audit_unchanged": true,
+      "revision": 8,
+      "audit_events": 8,
+      "method": "HTTP API, not UI: archived policy is absent from new acknowledgment selector"
+    },
+    "unrelated_edit_and_expired_approval": {
+      "unrelated_draft_edit_saved": true,
+      "expired_new_approval_rejected": true,
+      "old_policy_and_acknowledgments_unchanged": true,
+      "draft_status": "draft",
+      "revision": 9,
+      "audit_events": 9
+    },
+    "archived_history": {
+      "expired_policy_archived": true,
+      "original_version_body_date_status_retained": true,
+      "all_existing_acknowledgments_unchanged": true,
+      "versions": [
+        1,
+        1
+      ],
+      "revision": 10,
+      "audit_events": 10
+    },
+    "readback": "Show archive retains both archived policies and original v1 acknowledgments; unrelated draft retains revised owner and draft status",
+    "screens": [
+      "docs/expired-ack-rejected.jpg",
+      "docs/expired-approval-rejected.jpg",
+      "docs/history-preserved.jpg",
+      "docs/ack-history-preserved.jpg"
+    ]
+  },
+  "limits": [
+    "Historical approved status is not proof of current validity",
+    "Acknowledgment is a manual record, not an electronic signature or legal consent",
+    "No automatic repair of previously accepted archived acknowledgments",
+    "Server remains locally verified; no public server deployment or customer acceptance",
+    "UI layout/schema unchanged; no fresh whole-interface/security audit"
+  ]
+}
