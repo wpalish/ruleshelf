@@ -1,0 +1,6 @@
+.data/
+*.sqlite*
+*.db*
+.env*
+node_modules/
+.impeccable/review/

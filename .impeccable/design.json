@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T13:37:23.282Z",
+  "title": "Design System: RuleShelf",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Restrained teal",
+        "tonalRamp": [
+          "oklch(15% 0.08204 173.03)",
+          "oklch(26.43% 0.08204 173.03)",
+          "oklch(37.86% 0.08204 173.03)",
+          "oklch(49.29% 0.08204 173.03)",
+          "oklch(60.71% 0.08204 173.03)",
+          "oklch(72.14% 0.08204 173.03)",
+          "oklch(83.57% 0.08204 173.03)",
+          "oklch(95% 0.08204 173.03)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Deep teal",
+        "tonalRamp": [
+          "oklch(15% 0.07176 173.05)",
+          "oklch(26.43% 0.07176 173.05)",
+          "oklch(37.86% 0.07176 173.05)",
+          "oklch(49.29% 0.07176 173.05)",
+          "oklch(60.71% 0.07176 173.05)",
+          "oklch(72.14% 0.07176 173.05)",
+          "oklch(83.57% 0.07176 173.05)",
+          "oklch(95% 0.07176 173.05)"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Navy shell",
+        "tonalRamp": [
+          "oklch(15% 0.07333 248.44)",
+          "oklch(26.43% 0.07333 248.44)",
+          "oklch(37.86% 0.07333 248.44)",
+          "oklch(49.29% 0.07333 248.44)",
+          "oklch(60.71% 0.07333 248.44)",
+          "oklch(72.14% 0.07333 248.44)",
+          "oklch(83.57% 0.07333 248.44)",
+          "oklch(95% 0.07333 248.44)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Register ink",
+        "tonalRamp": [
+          "oklch(15% 0.05131 249.96)",
+          "oklch(26.43% 0.05131 249.96)",
+          "oklch(37.86% 0.05131 249.96)",
+          "oklch(49.29% 0.05131 249.96)",
+          "oklch(60.71% 0.05131 249.96)",
+          "oklch(72.14% 0.05131 249.96)",
+          "oklch(83.57% 0.05131 249.96)",
+          "oklch(95% 0.05131 249.96)"
+        ]
+      },
+      "page-ground": {
+        "role": "neutral",
+        "displayName": "Pale blue ground",
+        "tonalRamp": [
+          "oklch(15% 0.00929 242.84)",
+          "oklch(26.43% 0.00929 242.84)",
+          "oklch(37.86% 0.00929 242.84)",
+          "oklch(49.29% 0.00929 242.84)",
+          "oklch(60.71% 0.00929 242.84)",
+          "oklch(72.14% 0.00929 242.84)",
+          "oklch(83.57% 0.00929 242.84)",
+          "oklch(95% 0.00929 242.84)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White reading surface",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ]
+      },
+      "navigation-ground": {
+        "role": "neutral",
+        "displayName": "Blue navigation wash",
+        "tonalRamp": [
+          "oklch(15% 0.01946 240.74)",
+          "oklch(26.43% 0.01946 240.74)",
+          "oklch(37.86% 0.01946 240.74)",
+          "oklch(49.29% 0.01946 240.74)",
+          "oklch(60.71% 0.01946 240.74)",
+          "oklch(72.14% 0.01946 240.74)",
+          "oklch(83.57% 0.01946 240.74)",
+          "oklch(95% 0.01946 240.74)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Ruled divider",
+        "tonalRamp": [
+          "oklch(15% 0.02775 241.23)",
+          "oklch(26.43% 0.02775 241.23)",
+          "oklch(37.86% 0.02775 241.23)",
+          "oklch(49.29% 0.02775 241.23)",
+          "oklch(60.71% 0.02775 241.23)",
+          "oklch(72.14% 0.02775 241.23)",
+          "oklch(83.57% 0.02775 241.23)",
+          "oklch(95% 0.02775 241.23)"
+        ]
+      },
+      "input-border": {
+        "role": "neutral",
+        "displayName": "Field boundary",
+        "tonalRamp": [
+          "oklch(15% 0.04565 242.07)",
+          "oklch(26.43% 0.04565 242.07)",
+          "oklch(37.86% 0.04565 242.07)",
+          "oklch(49.29% 0.04565 242.07)",
+          "oklch(60.71% 0.04565 242.07)",
+          "oklch(72.14% 0.04565 242.07)",
+          "oklch(83.57% 0.04565 242.07)",
+          "oklch(95% 0.04565 242.07)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted blue ink",
+        "tonalRamp": [
+          "oklch(15% 0.05108 245.00)",
+          "oklch(26.43% 0.05108 245.00)",
+          "oklch(37.86% 0.05108 245.00)",
+          "oklch(49.29% 0.05108 245.00)",
+          "oklch(60.71% 0.05108 245.00)",
+          "oklch(72.14% 0.05108 245.00)",
+          "oklch(83.57% 0.05108 245.00)",
+          "oklch(95% 0.05108 245.00)"
+        ]
+      },
+      "link": {
+        "role": "neutral",
+        "displayName": "Linked blue",
+        "tonalRamp": [
+          "oklch(15% 0.09803 249.12)",
+          "oklch(26.43% 0.09803 249.12)",
+          "oklch(37.86% 0.09803 249.12)",
+          "oklch(49.29% 0.09803 249.12)",
+          "oklch(60.71% 0.09803 249.12)",
+          "oklch(72.14% 0.09803 249.12)",
+          "oklch(83.57% 0.09803 249.12)",
+          "oklch(95% 0.09803 249.12)"
+        ]
+      },
+      "pending": {
+        "role": "neutral",
+        "displayName": "Pending amber",
+        "tonalRamp": [
+          "oklch(15% 0.09818 77.06)",
+          "oklch(26.43% 0.09818 77.06)",
+          "oklch(37.86% 0.09818 77.06)",
+          "oklch(49.29% 0.09818 77.06)",
+          "oklch(60.71% 0.09818 77.06)",
+          "oklch(72.14% 0.09818 77.06)",
+          "oklch(83.57% 0.09818 77.06)",
+          "oklch(95% 0.09818 77.06)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error red",
+        "tonalRamp": [
+          "oklch(15% 0.14583 27.85)",
+          "oklch(26.43% 0.14583 27.85)",
+          "oklch(37.86% 0.14583 27.85)",
+          "oklch(49.29% 0.14583 27.85)",
+          "oklch(60.71% 0.14583 27.85)",
+          "oklch(72.14% 0.14583 27.85)",
+          "oklch(83.57% 0.14583 27.85)",
+          "oklch(95% 0.14583 27.85)"
+        ]
+      },
+      "error-ground": {
+        "role": "neutral",
+        "displayName": "Error wash",
+        "tonalRamp": [
+          "oklch(15% 0.01650 26.65)",
+          "oklch(26.43% 0.01650 26.65)",
+          "oklch(37.86% 0.01650 26.65)",
+          "oklch(49.29% 0.01650 26.65)",
+          "oklch(60.71% 0.01650 26.65)",
+          "oklch(72.14% 0.01650 26.65)",
+          "oklch(83.57% 0.01650 26.65)",
+          "oklch(95% 0.01650 26.65)"
+        ]
+      },
+      "selection-ground": {
+        "role": "neutral",
+        "displayName": "Selection mint",
+        "tonalRamp": [
+          "oklch(15% 0.04409 174.61)",
+          "oklch(26.43% 0.04409 174.61)",
+          "oklch(37.86% 0.04409 174.61)",
+          "oklch(49.29% 0.04409 174.61)",
+          "oklch(60.71% 0.04409 174.61)",
+          "oklch(72.14% 0.04409 174.61)",
+          "oklch(83.57% 0.04409 174.61)",
+          "oklch(95% 0.04409 174.61)"
+        ]
+      },
+      "selection-ink": {
+        "role": "neutral",
+        "displayName": "Selection ink",
+        "tonalRamp": [
+          "oklch(15% 0.03602 177.75)",
+          "oklch(26.43% 0.03602 177.75)",
+          "oklch(37.86% 0.03602 177.75)",
+          "oklch(49.29% 0.03602 177.75)",
+          "oklch(60.71% 0.03602 177.75)",
+          "oklch(72.14% 0.03602 177.75)",
+          "oklch(83.57% 0.03602 177.75)",
+          "oklch(95% 0.03602 177.75)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Keyboard focus amber",
+        "tonalRamp": [
+          "oklch(15% 0.13748 55.87)",
+          "oklch(26.43% 0.13748 55.87)",
+          "oklch(37.86% 0.13748 55.87)",
+          "oklch(49.29% 0.13748 55.87)",
+          "oklch(60.71% 0.13748 55.87)",
+          "oklch(72.14% 0.13748 55.87)",
+          "oklch(83.57% 0.13748 55.87)",
+          "oklch(95% 0.13748 55.87)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Task headline",
+        "purpose": "The existing h1 task heading; inherited platform system UI, not a new display face."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Inherited platform text; paragraph line height and 72ch measure."
+      },
+      "label": {
+        "displayName": "Field and action label",
+        "purpose": "Visible native form labels and button weight."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "stack-workspace",
+        "value": "700px"
+      },
+      {
+        "name": "compact-records",
+        "value": "600px"
+      }
+    ],
+    "provenance": {
+      "method": "Source scan after independent scored-fix ship verdict; no new browser run by documenter.",
+      "sources": [
+        {
+          "path": "public/styles.css",
+          "sha256": "8cec8eae1a3ba6465c17d1efe510d9cd1fc82134c616ea52debbdb30cd89fa9b"
+        },
+        {
+          "path": "public/app.js",
+          "sha256": "fd308d8c09e71678a97ba6d5eff73ebd5491e8b202c14516dcfc8e1c250ff3e3"
+        },
+        {
+          "path": "public/index.html",
+          "sha256": "ddb351252c684b9eed3e8ec09bb686b182623171ecc582c9d160406ff7b3806b"
+        },
+        {
+          "path": "module.js",
+          "sha256": "77e363f2be0f89622959a2fbfd6d8a6fb7470e574af2e66e2ea93eaf8700296c"
+        },
+        {
+          "path": "PRODUCT.md",
+          "sha256": "f6b8b8916122c972577cfcab85b87b70a0be95511e105e0e1b40a68b0362b934"
+        },
+        {
+          "path": "README.md",
+          "sha256": "66ba4bafce2445313c267e233ed491bffbd25b50ffa15157ad81a8b7c6d83151"
+        },
+        {
+          "path": ".impeccable/surface.md",
+          "sha256": "aa73d7ec660d65a9f3a0e8ef753b4bf050ed9660cb91ceec3ca0c6395d7b689b"
+        },
+        {
+          "path": ".impeccable/review/finish-review.md",
+          "sha256": "1f44e0c9439cbbd1432c03031db2b0fd4ad421c05c7d05c7e5d0764dfda10968"
+        },
+        {
+          "path": ".impeccable/review/verdict-pass.md",
+          "sha256": "faf4a0757eb4d6f2e92a3e55ecf0f26e012a42196e60d354be61f5a41b5908d7"
+        }
+      ],
+      "captures": [
+        {
+          "path": ".impeccable/review/desktop.jpg",
+          "width": 1440,
+          "height": 900,
+          "sha256": "e540b7a9fc8d8d9fdd1e312eb3cb5daf5f356869b8d4155d313b2d6718242739"
+        },
+        {
+          "path": ".impeccable/review/mobile.jpg",
+          "width": 390,
+          "height": 1062,
+          "sha256": "ad0ece17da80cd4c5379557bc4f031f9141f43bda46945d14884a0c2303fad02"
+        },
+        {
+          "path": ".impeccable/review/user-1280.jpg",
+          "width": 1280,
+          "height": 900,
+          "sha256": "4f6a7d9111c70662e83fb4fb6dd61ff325aa5004f5d15a0645da5aff121f2af3"
+        }
+      ],
+      "sharedWorld": "Inherited public reference register from DerekDesk; same stylesheet/client/page across all 18 apps.",
+      "seed": {
+        "recorded": "seed:3c78d412b26a4ca6",
+        "currentValidation": "Unavailable; earlier corroboration is reported by the supplied DerekDesk review. No new roll."
+      },
+      "qualityBar": "Not supplied; ceiling unscored.",
+      "reviewScope": "Final verdict ships scored fixes only, not all states or security.",
+      "codeDerivedStates": [
+        "hover",
+        "disabled/loading",
+        "error",
+        "empty/no-match",
+        "login",
+        "edit",
+        "settings"
+      ],
+      "contrastCalculations": {
+        "method": "WCAG sRGB relative luminance on literal source colors; excludes disabled opacity and combined hover filter.",
+        "pairs": [
+          {
+            "foreground": "surface",
+            "background": "primary",
+            "ratio": 6.88
+          },
+          {
+            "foreground": "surface",
+            "background": "primary-hover",
+            "ratio": 9
+          },
+          {
+            "foreground": "surface",
+            "background": "navy",
+            "ratio": 11.07
+          },
+          {
+            "foreground": "ink",
+            "background": "page-ground",
+            "ratio": 12.41
+          },
+          {
+            "foreground": "muted",
+            "background": "page-ground",
+            "ratio": 5.71
+          },
+          {
+            "foreground": "input-border",
+            "background": "surface",
+            "ratio": 3.17
+          },
+          {
+            "foreground": "focus",
+            "background": "surface",
+            "ratio": 4.1
+          },
+          {
+            "foreground": "focus",
+            "background": "page-ground",
+            "ratio": 3.67
+          },
+          {
+            "foreground": "error",
+            "background": "error-ground",
+            "ratio": 7.37
+          },
+          {
+            "foreground": "pending",
+            "background": "surface",
+            "ratio": 6.95
+          },
+          {
+            "foreground": "link",
+            "background": "surface",
+            "ratio": 8.65
+          },
+          {
+            "foreground": "line",
+            "background": "surface",
+            "ratio": 1.67
+          }
+        ]
+      },
+      "previewTonalRamps": "Synthesized 8-step OKLCH dark-to-light ramps for the panel only. They are not implemented CSS tokens."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary task button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The actual task/submit action; hover and focus are source-derived.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Сохранить</button>",
+      "css": ".ds-primary{display:inline-block;min-height:44px;padding:0.65rem 1rem;border:1px solid var(--navy,#183e60);border-radius:7px;color:#fff;background:var(--navy,#183e60);font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none;background:var(--teal,#126653);border-color:var(--teal,#126653)}.ds-primary:hover{background:#0b5343;filter:brightness(1.13)}.ds-primary:focus-visible{outline:3px solid #bd671a;outline-offset:3px;}.ds-primary:disabled{opacity:0.55;cursor:wait}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The helper default for Refresh/Open/Return and navigation controls.",
+      "html": "<button class=\"ds-secondary\" type=\"button\">Обновить</button>",
+      "css": ".ds-secondary{display:inline-block;min-height:44px;padding:0.65rem 1rem;border:1px solid var(--navy,#183e60);border-radius:7px;color:#fff;background:var(--navy,#183e60);font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none;background:#fff;color:var(--navy,#183e60)}.ds-secondary:hover{filter:brightness(1.13)}.ds-secondary:focus-visible{outline:3px solid #bd671a;outline-offset:3px;}.ds-secondary:disabled{opacity:0.55;cursor:wait}"
+    },
+    {
+      "name": "Labelled field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A visible associated native text field; the label is taken from this product schema.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-record-field\">Название</label><input id=\"ds-record-field\" type=\"text\" required></div>",
+      "css": ".ds-field{font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;color:#172e45}.ds-field label{display:block;font-weight:600;margin:0 0 0.35rem}.ds-field input{font:inherit;width:100%;padding:0.7rem;border:1px solid #7894aa;border-radius:7px;background:#fff;color:inherit;caret-color:#174e7e}.ds-field input:focus-visible{outline:3px solid #bd671a;outline-offset:3px;}"
+    },
+    {
+      "name": "Collection navigation",
+      "kind": "nav",
+      "description": "The actual collection names on the inherited navigation wash; active state uses aria-current.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Разделы\"><button type=\"button\" aria-current=\"page\">Регламенты</button><button type=\"button\">Ознакомление</button></nav>",
+      "css": ".ds-nav{display:flex;gap:0.5rem;flex-wrap:wrap;padding:0.7rem 1.25rem;background:#dce9f3;border-bottom:1px solid var(--line,#b9cbd9)}.ds-nav button{display:inline-block;min-height:44px;padding:0.65rem 1rem;border:1px solid var(--navy,#183e60);border-radius:7px;color:#fff;background:var(--navy,#183e60);font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none;background:#fff;color:var(--navy,#183e60);border-color:transparent}.ds-nav [aria-current=\"page\"]{border-color:var(--line,#b9cbd9)}.ds-nav button:hover{filter:brightness(1.13)}.ds-nav button:focus-visible{outline:3px solid #bd671a;outline-offset:3px;}@media(max-width:700px){.ds-nav{padding:0.6rem}.ds-nav button{flex:1}}@media(max-width:600px){.ds-nav button{flex:auto}}"
+    },
+    {
+      "name": "White panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Shared form/restore surface, with source padding and border.",
+      "html": "<section class=\"ds-panel\"><h2>Данные и доступ</h2><p>Восстановление в пустую базу</p></section>",
+      "css": ".ds-panel{font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;background:#fff;color:#172e45;border:1px solid var(--line,#b9cbd9);border-radius:12px;padding:1.4rem;min-width:0}.ds-panel h2{font-size:1.3rem;margin:2rem 0 0.75rem}.ds-panel p{max-width:72ch;line-height:1.6;margin:0.5rem 0 1rem}@media(max-width:700px){.ds-panel{padding:1rem}}"
+    },
+    {
+      "name": "Record table",
+      "kind": "custom",
+      "description": "Ruled table in its own focusable overflow region; sample values are empty dashes, not customer data.",
+      "html": "<div class=\"ds-table\" tabindex=\"0\" aria-label=\"Таблица записей. Если столбцы не помещаются, прокрутите вправо.\"><table><thead><tr><th>Название</th><th>Ответственный</th><th>Текст регламента</th></tr></thead><tbody><tr><td>—</td><td>—</td><td>—</td></tr></tbody></table></div>",
+      "css": ".ds-table{font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;color:#172e45;overflow:auto;border:1px solid var(--line,#b9cbd9);border-radius:12px;background:#fff}.ds-table table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.ds-table th,.ds-table td{text-align:left;padding:0.9rem;vertical-align:top;border-bottom:1px solid var(--line,#b9cbd9);overflow-wrap:anywhere;max-width:28ch}.ds-table th{background:#dce9f3;font-size:0.9rem}.ds-table tr:last-child td{border-bottom:0}.ds-table:focus-visible{outline:3px solid #bd671a;outline-offset:3px;}@media(max-width:600px){.ds-table table{font-size:0.9rem}.ds-table th,.ds-table td{min-width:140px}}"
+    },
+    {
+      "name": "Error notice",
+      "kind": "custom",
+      "refersTo": "error-notice",
+      "description": "Source-derived error treatment; the live client focuses its notice after a failed async action.",
+      "html": "<div class=\"ds-error\" role=\"status\" tabindex=\"-1\">Не удалось выполнить запрос.</div>",
+      "css": ".ds-error{font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;color:#942721;background:#fff0ee;padding:1rem;border-radius:7px;margin-bottom:1rem}.ds-error:focus-visible{outline:3px solid #bd671a;outline-offset:3px;}"
+    },
+    {
+      "name": "Computed register entry",
+      "kind": "custom",
+      "description": "Plain heading and paragraphs for server-calculated controls; no invented KPI card.",
+      "html": "<section class=\"ds-summary\"><h2>Расчёт и контроль</h2><div class=\"ds-entry\"><p>Расчёт появится после сохранения записей.</p></div></section>",
+      "css": ".ds-summary{font-family:system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;color:#172e45}.ds-summary h2{font-size:1.3rem;margin:2rem 0 0.75rem}.ds-entry{border-bottom:1px solid var(--line,#b9cbd9);padding:1rem 0}.ds-entry:first-child{padding-top:0}.ds-entry:last-child{border-bottom:0}.ds-entry p{max-width:72ch;line-height:1.6;margin:0.5rem 0 1rem}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Public reference register",
+    "overview": "RuleShelf uses the inherited public reference register: a cool pale-blue ground, navy shell, ink text, restrained teal actions and white reading surfaces. It is a practical Russian-language workspace for one organization, with familiar labelled fields, readable records and computed controls. The code and the existing surface contract define this identity; this document does not assign a new identity to the product.\n\nThe same shell serves «Регламенты», «Ознакомление». Domain vocabulary comes from module.js, while the reusable visual system comes from public/styles.css, public/app.js and public/index.html. The system remains flat and task-focused; saved records and server-calculated results share a workflow.",
+    "keyCharacteristics": [
+      "Cool ground and white reading surfaces with navy structure.",
+      "Teal primary actions, labelled native controls and visible keyboard focus.",
+      "Ruled record tables with contained horizontal scrolling on narrow screens.",
+      "Russian domain labels and explicit distinction between saved records and calculated results."
+    ],
+    "rules": [
+      {
+        "name": "Action hierarchy",
+        "body": "Use teal for primary task and submit actions; retain the white secondary action treatment and navy shell.",
+        "section": "colors"
+      },
+      {
+        "name": "Readable records",
+        "body": "Keep the domain labels, record table and computed results in one reading order; contain wide tables in their focusable scroll region.",
+        "section": "layout"
+      },
+      {
+        "name": "Labelled controls",
+        "body": "Keep visible labels associated with every field, preserve native input types, and retain the visible focus outline.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do reuse the shared palette and control vocabulary across collections.",
+      "Do keep Russian display labels and resolved reference names readable and searchable.",
+      "Do preserve the mobile table hint, focusable scroll container and wrapped prose.",
+      "Do distinguish public form submission, manual status marks and server calculations using the existing product wording."
+    ],
+    "donts": [
+      "Don't invent a separate palette or visual identity for each domain collection.",
+      "Don't replace labelled fields with placeholder-only controls or hide keyboard focus.",
+      "Don't turn a manual status mark into a claim of payment, signature, message delivery or external verification.",
+      "Don't promote preview tonal ramps or unpictured states into browser-verified implementation facts."
+    ]
+  }
+}

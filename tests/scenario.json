@@ -1,0 +1,51 @@
+[
+  {
+    "collection": "policies",
+    "as": "p",
+    "data": {
+      "name": "Учебное правило",
+      "owner": "TEST",
+      "body": "Вымышленный текст версии один.",
+      "source": "https://example.org/rule",
+      "version": 1,
+      "validUntil": "2099-12-31",
+      "status": "draft"
+    }
+  },
+  {
+    "collection": "policies",
+    "id": "$p",
+    "data": {
+      "name": "Учебное правило",
+      "owner": "TEST",
+      "body": "Вымышленный текст версии один.",
+      "source": "https://example.org/rule",
+      "version": 1,
+      "validUntil": "2099-12-31",
+      "status": "approved"
+    }
+  },
+  {
+    "collection": "acks",
+    "data": {
+      "policy": "$p",
+      "person": "TEST",
+      "version": 1,
+      "evidence": "Вымышленная отметка"
+    }
+  },
+  {
+    "collection": "policies",
+    "id": "$p",
+    "error": "следующей версии",
+    "data": {
+      "name": "Учебное правило",
+      "owner": "TEST",
+      "body": "Другой текст без смены версии.",
+      "source": "https://example.org/rule",
+      "version": 1,
+      "validUntil": "2099-12-31",
+      "status": "approved"
+    }
+  }
+]

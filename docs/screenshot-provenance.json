@@ -1,0 +1,9 @@
+{
+  "origin": "Owned application rendered locally with synthetic test records on 2026-10-24",
+  "screens": {
+    "desktop.jpg": 1440,
+    "mobile.jpg": 390
+  },
+  "encoding": "JPEG",
+  "contains_customer_data": false
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ruleshelf",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Версии регламентов, сроки пересмотра и отметки ознакомления с конкретной версией.",
+  "engines": {
+    "node": ">=24.15 <25"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "test": "node --test tests/*.test.js"
+  }
+}

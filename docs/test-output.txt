@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: RuleShelf: complete original workflow, calculation and rejected invalid transition
+ok 1 - RuleShelf: complete original workflow, calculation and rejected invalid transition
+  ---
+  duration_ms: 2.604292
+  type: 'test'
+  ...
+# Subtest: real file restart, optimistic conflict and validated restore into an empty database
+ok 2 - real file restart, optimistic conflict and validated restore into an empty database
+  ---
+  duration_ms: 3.134208
+  type: 'test'
+  ...
+# Subtest: HTTP prevents anonymous reads and cross-origin/CSRF writes while authenticated workflow saves
+ok 3 - HTTP prevents anonymous reads and cross-origin/CSRF writes while authenticated workflow saves
+  ---
+  duration_ms: 73.767084
+  type: 'test'
+  ...
+# Subtest: two products on one host use isolated session cookies and preserve both logins
+ok 4 - two products on one host use isolated session cookies and preserve both logins
+  ---
+  duration_ms: 88.406916
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 212.104666

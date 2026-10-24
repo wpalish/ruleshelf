@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-24",
+  "version": "0.1.0",
+  "runtime": "Node 24.19.0",
+  "tests": {
+    "slug": "ruleshelf",
+    "tests": 4,
+    "pass": true,
+    "runtime": "v24.19.0"
+  },
+  "browser": {
+    "slug": "ruleshelf",
+    "status": "ui_workflow_passed",
+    "saved_operations": 3,
+    "labels": {
+      "p": "Учебное правило"
+    },
+    "reference": 89
+  },
+  "screens": [
+    "../.impeccable/review/desktop.jpg",
+    "../.impeccable/review/mobile.jpg",
+    "../.impeccable/review/user-1280.jpg"
+  ],
+  "limitations": "Отметка ознакомления не является электронной подписью или юридическим подтверждением согласия.",
+  "deployment": "source repository; server checked locally only",
+  "security_audit": false,
+  "customer_validation": false,
+  "review": {
+    "disposition": "ship",
+    "scope": "Reviewer scored the listed fixes resolved; not a new whole-surface/security audit",
+    "record": "verdict-pass.md"
+  },
+  "correctionBrowser": {
+    "slug": "ruleshelf",
+    "query": "Учебное правило",
+    "result": "visible_label_and_no_results_recovery_passed"
+  }
+}
